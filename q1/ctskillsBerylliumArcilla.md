@@ -11,6 +11,7 @@ The operation in the school canteen is slow, due to most duties are manually per
 ---
 ## Step 2: Identify the Sub-Problems
 1. The students can receive a wrong amount of change.
+2. 
 --- 
 ## Step 3: Apply Computational Thinking Skills
 | Sub-Problem | CT Skill | Proposed Solution |
