@@ -1,9 +1,8 @@
 # Chinese Zodiac
 ## Code and output
-**Name:** Zuleyka Clio
-**Last Name:** Arcilla
-**Section:** Beryllium
-**Date Accomplished:** August 21, 2026
+##Name: Zuleyka Clio Arcilla
+##Section: Beryllium
+##Date Accomplished: August 21, 2026
 
 birth_year = int(input("Enter your birth year: "))
 
