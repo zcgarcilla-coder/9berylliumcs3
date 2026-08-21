@@ -14,4 +14,4 @@ In this inventory system, inheritance can be applied in asking for required inpu
 Polymorphism can be used in managing data since the products have different values in their properties. For example, the change in the availability is different for all products.
 
 ## Reflection
-In my opinion, the best to use among the four pillars is encapsulation. Considering the type of system that this has, encapsulation is efficient to use in an inventory. It groups all properties of an object under a single one, providing easier storing and updating of data.
+In my opinion, the best to use among the four pillars is encapsulation. Considering the type of system that this has, encapsulation is efficient to use in an inventory. It groups all properties of an object under a single one, providing easier storing and editing of data.
