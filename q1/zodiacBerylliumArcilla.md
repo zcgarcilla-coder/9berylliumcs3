@@ -1,3 +1,10 @@
+# Chinese Zodiac
+## Code and output
+**Name:** Zuleyka Clio
+**Last Name:** Arcilla
+**Section:** Beryllium
+**Date Accomplished:** August 21, 2026
+
 birth_year = int(input("Enter your birth year: "))
 
 if birth_year < 1900:
@@ -28,4 +35,6 @@ else:
     elif zodiac_index == 10:
         print("Your chinese zodiac is Dog (狗 / Gǒu).")
     elif zodiac_index == 11:
-        print("Your chinese zodiac is Pig (猪 / Zhū).")<img width="1094" height="211" alt="Screenshot 2026-08-21 055510" src="https://github.com/user-attachments/assets/7d46bff7-3e94-400e-b04a-a45de30ff8b6" />
+        print("Your chinese zodiac is Pig (猪 / Zhū).")
+        
+<img width="1094" height="211" alt="Screenshot 2026-08-21 055510" src="https://github.com/user-attachments/assets/7c50253d-b355-4e78-be8b-e1e6ce88d408" />
