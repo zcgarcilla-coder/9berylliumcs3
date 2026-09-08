@@ -28,6 +28,10 @@ Changes from my previous design:
 ![Object Diagram](images/objectDiagram.png)
 ## Analysis
 ### Why did you make your chosen attribute private?
+#### The chosen attribute which is the rating is a value derived from a personal opinion which means it should not be changed or edited outside the class.
 ### Which method changes the state of your object?
+#### I used the update_movie() method which allowed me to change 2 properties in the object (genre and rating).
 ### How did your two objects demonstrate that instances are independent?
+#### When the first object was changed, it did not affect the properties of the other object, showing that the 2 objects have independent properties even if those were derived from the same functions.
 ### What is the difference between your class diagram and your object diagram?
+#### The class diagram shows the format of the blueprint; meanwhile, the object diagram presents how the class acts as a blueprint. The former shows the properties and methods, and the latter one presented the specific values derived from the methods.
