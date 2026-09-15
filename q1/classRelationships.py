@@ -20,21 +20,20 @@ inventory = []
 
 def add_movie():
   title = input("Enter the title of the movie: ")
-  director = input("Enter the director of the movie: "))
+  director = input("Enter the director of the movie: ")
   add_genre()
-  rating = input("Enter the rating of the movie: "))
+  rating = input("Enter the rating of the movie: ")
   movie = Movies(title, director, genre, rating)
   inventory.append(movie)
   return inventory
 
-inventory2 = []
+movies.related_objects = []
 
-def add_genre():
-type = input("Enter the genre of the movie: "))
-description = input("Enter description: ")
-genre = Genres(type, description)
-genre.append(genre)
-return inventory2
+def add_genre(genre):
+  type = input("Enter the genre of the movie: ")
+  description = input("Enter description: ")
+  genre = Genres(type, description)
+  movies.related_objects.append(genre)
 
 
 def display_movies():
