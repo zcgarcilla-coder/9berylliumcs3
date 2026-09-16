@@ -10,3 +10,4 @@ My email is zcgarcilla@brc.pshs.edu.ph.
 - [ILA 3-1: Applying the Four Pillars of OOP](q1/ila_oop.md)
 - [OOP Act](q1/classObjectUML.md)
 - [OOP Act 2](q1/classAttributesMethods.md)
+- [OOP Act 3](q1/classRelationships.md)
