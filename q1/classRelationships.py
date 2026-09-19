@@ -7,12 +7,17 @@ class Genre:
   def add_object(self, object_reference):
     self.related_objects.append(object_reference)
 
+  def __str__(self):
+    return f"Genre: {self.attribute1}, Description: {self.attribute2}"
 class Movies:
     def __init__(self, title, director, genre_type, genre_desc, rating):
         self.attribute1 = title
         self.attribute2 = director
         self.genre = Genre(genre_type, genre_desc)
         self.attribute3 = rating
+
+    def __str__(self):
+      return f"Title: {self.attribute1}, Director: {self.attribute2}, Genre: {self.genre.attribute1}, Description: {self.genre.attribute2}, Rating: {self.attribute3}"
 
 def greet(name):
     print(f"Hello, {name}! Welcome to the Movie Inventory System.")
@@ -113,9 +118,9 @@ print(f"Genre 1: {scifi_genre}")
 print(f"Genre 2: {thriller_genre}")
 print(f"Genre 3: {action_genre}")
 print("--- BUILDING RELATIONSHIP ---")
-movie.add_genre(scifi_genre)
-movie.add_genre(thriller_genre)
-movie.add_genre(action_genre)
+movie.genre.add_object(scifi_genre)
+movie.genre.add_object(thriller_genre)
+movie.genre.add_object(action_genre)
 print("--- AFTER RELATIONSHIP ---")
 print(f"Movie: {movie.attribute1}")
 print(f"Director: {movie.attribute2}")
@@ -123,5 +128,5 @@ print(f"Genre: {movie.genre.attribute1}")
 print(f"Description: {movie.genre.attribute2}")
 print(f"Rating: {movie.attribute3}")
 print("Related object(s):")
-for genre in movie.genres:
+for genre in movie.genre.related_objects:
     print(f" - {genre}")
