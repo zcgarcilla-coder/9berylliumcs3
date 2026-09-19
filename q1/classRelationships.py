@@ -1,14 +1,18 @@
-class Movies:
-    def __init__(movie, title, director, genre, rating):
-        movie.attribute1 = title
-        movie.attribute2 = director
-        movie.attribute3 = genre
-        movie.__private_attribute = rating
+class Genre:
+  def __init__(self, genre_type, genre_desc):
+    self.attribute1 = genre_type
+    self.attribute2 = genre_desc
+    self.related_objects = []
 
-class Genres:
-  def __init__(genre, type, description):
-    genre.attribute1 = type
-    genre.attribute2 = description
+  def add_object(self, object_reference):
+    self.related_objects.append(object_reference)
+
+class Movies:
+    def __init__(self, title, director, genre_type, genre_desc, rating):
+        self.attribute1 = title
+        self.attribute2 = director
+        self.genre = Genre(genre_type, genre_desc)
+        self.attribute3 = rating
 
 def greet(name):
     print(f"Hello, {name}! Welcome to the Movie Inventory System.")
@@ -21,20 +25,13 @@ inventory = []
 def add_movie():
   title = input("Enter the title of the movie: ")
   director = input("Enter the director of the movie: ")
-  add_genre()
+  genre_type = input("Enter the genre of the movie: ")
+  genre_desc = input("Enter the description of the genre: ")
   rating = input("Enter the rating of the movie: ")
-  movie = Movies(title, director, genre, rating)
+  movie = Movies(title, director, genre_type, genre_desc, rating)
+  movie.genre.add_object(movie)
   inventory.append(movie)
   return inventory
-
-movies.related_objects = []
-
-def add_genre(genre):
-  type = input("Enter the genre of the movie: ")
-  description = input("Enter description: ")
-  genre = Genres(type, description)
-  movies.related_objects.append(genre)
-
 
 def display_movies():
   if len(inventory) == 0:
@@ -44,8 +41,9 @@ def display_movies():
       print(f"\nMovie {i+1}:")
       print(f"Title: {movie.attribute1}")
       print(f"Director: {movie.attribute2}")
-      print(f"Genre: {movie.attribute3}")
-      print(f"Rating: {movie._Movies__private_attribute}")
+      print(f"Genre: {movie.genre.attribute1}")
+      print(f"Description: {movie.genre.attribute2}")
+      print(f"Rating: {movie.attribute3}")
   return inventory
         
 def update_movie():
@@ -59,12 +57,13 @@ def update_movie():
     else:
       title = (input("Enter the new title of the movie: "))
       director = (input("Enter the new director of the movie: "))
-      genre = (input("Enter the new genre of the movie: "))
+      genre_type = (input("Enter the new genre of the movie: "))
+      genre_desc = (input("Enter the new description of the genre: "))
       rating = (input("Enter the new rating of the movie: "))
       inventory[movie_index].attribute1 = title
       inventory[movie_index].attribute2 = director
-      inventory[movie_index].attribute3 = genre
-      inventory[movie_index]._Movies__private_attribute = rating
+      inventory[movie_index].genre = Genre(genre_type, genre_desc)
+      inventory[movie_index].attribute3 = int(rating)
       print("Movie updated successfully.")
   return inventory
 
@@ -102,3 +101,27 @@ while True:
     break
   else:
     print("Invalid choice. Please try again.")
+
+
+print("--- BEFORE RELATIONSHIP ---")
+movie = Movies("Inception", "Christopher Nolan", "Science Fiction", "A genre that uses speculative, fictional science-based depictions of phenomena.", 8.8)
+scifi_genre = Genre("Science Fiction", "A genre that uses speculative, fictional science-based depictions of phenomena.")
+thriller_genre = Genre("Thriller", "A genre that focuses on tension, suspense, and excitement.")
+action_genre = Genre("Action", "A genre that focuses on physical action and adventure.")
+print(f"Movie: {movie}")
+print(f"Genre 1: {scifi_genre}")
+print(f"Genre 2: {thriller_genre}")
+print(f"Genre 3: {action_genre}")
+print("--- BUILDING RELATIONSHIP ---")
+movie.add_genre(scifi_genre)
+movie.add_genre(thriller_genre)
+movie.add_genre(action_genre)
+print("--- AFTER RELATIONSHIP ---")
+print(f"Movie: {movie.attribute1}")
+print(f"Director: {movie.attribute2}")
+print(f"Genre: {movie.genre.attribute1}")
+print(f"Description: {movie.genre.attribute2}")
+print(f"Rating: {movie.attribute3}")
+print("Related object(s):")
+for genre in movie.genres:
+    print(f" - {genre}")
