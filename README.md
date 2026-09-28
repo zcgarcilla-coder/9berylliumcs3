@@ -11,3 +11,4 @@ My email is zcgarcilla@brc.pshs.edu.ph.
 - [OOP Act](q1/classObjectUML.md)
 - [OOP Act 2](q1/classAttributesMethods.md)
 - [OOP Act 3](q1/classRelationships.md)
+- [OOP Act 4](q1/advancedRelationships.md)
