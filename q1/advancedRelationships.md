@@ -4,8 +4,8 @@
 [classRel](classRelationships.md)
 ## Existing System Description:
 ## Inheritance Relationship
-Parent:
-Child:
+Parent: Movie
+Child: Genre
 Explanation:
 ## Inheritance UML
 ![Inheritance](images/inheritanceDiagram.png)
@@ -19,6 +19,6 @@ Diagram:
 ## Test Run
 ![Test](images/advancedTestRun.png)
 ## Object Diagram
-![Objects](images/advancedObject Diagram.png)
+![Objects](images/advancedObjectDiagram.png)
 ## Reflections:
 Answers:
