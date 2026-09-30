@@ -1,17 +1,17 @@
-# Advanced Class Relationships
+ # Advanced Class Relationships
 ## Previous Activities
 [classAttrib](classAttributesMethod.md)
 [classRel](classRelationships.md)
-## Existing System Description:
+## Existing System Description: Movie HAS-A genre
 ## Inheritance Relationship
 Parent: Movie
 Child: Genre
-Explanation:
+Explanation: The child class is an attribute or property of the parent class, because a movie contains genre/s.
 ## Inheritance UML
 ![Inheritance](images/inheritanceDiagram.png)
 ## Composition/Aggregation
-Relationship:
-Diagram:
+Relationship: Composition: Strong HAS-A relationship
+Diagram: 
 ## Advanced UML Diagram
 ![Advanced UML](images/advancedClassDiagram.png)
 ## Python Implementation
