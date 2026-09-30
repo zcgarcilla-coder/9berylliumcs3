@@ -11,7 +11,7 @@ Explanation: The child class is an attribute or property of the parent class, be
 ![Inheritance](images/inheritanceDiagram.png)
 ## Composition/Aggregation
 Relationship: Composition: Strong HAS-A relationship
-Diagram: 
+Explanation: The child class (genre) is an attribute of the parent class (movie), meaning if the parent class was to be deleted, so is the child class because it is under that.
 ## Advanced UML Diagram
 ![Advanced UML](images/advancedClassDiagram.png)
 ## Python Implementation
