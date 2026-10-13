@@ -1,6 +1,6 @@
 class BankAccount:
     def __init__(self, account_number, balance):
-        self.__account_number = int(account_number) # Private attribute
+        self.__account_number = int(account_number) # Private attribute, makes the property an int
         self.__balance = float(balance)  # Private attribute, makes the property a float
 
     def deposit(self, amount):
