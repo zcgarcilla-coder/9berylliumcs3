@@ -12,3 +12,6 @@ My email is zcgarcilla@brc.pshs.edu.ph.
 - [OOP Act 2](q1/classAttributesMethods.md)
 - [OOP Act 3](q1/classRelationships.md)
 - [OOP Act 4](q1/advancedRelationships.md)
+
+## Quarter 2 Activities
+- [Encapsulation](q2/sg8_encapsulation.py)
