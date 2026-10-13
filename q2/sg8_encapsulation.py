@@ -1,7 +1,7 @@
 class BankAccount:
     def __init__(self, account_number, balance):
         self.__account_number = account_number # Private attribute
-        self.__balance = float(balance)  # Private attribute, makes the proeperty a float
+        self.__balance = float(balance)  # Private attribute, makes the property a float
 
     def deposit(self, amount):
         if amount > 0:
@@ -11,7 +11,7 @@ class BankAccount:
         self.__account_number = account_number  # Public method to set private attribute
 
     def set_balance(self, balance):
-        if balance < 0:
+        if balance < 0: # Checks if negative
             print("Balance cannot be negative.")
             return
         self.__balance = float(balance)  # Public method to set private attribute
