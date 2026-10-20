@@ -54,34 +54,39 @@ class Magazine(Publication):
         super().display_info()
         print(f"Issue Number: {self.issue_number}")
 
-# Creating first objects
+# Creating first objects, assigning values to the attributes of the classes
 pub1 = Publication("Generic Publication", "John Doe")
 book1 = Book("Python Programming", "Jane Smith", 350)
 mag1 = Magazine("Tech Monthly", "Alice Johnson", 42)
 
+print("Example objects (1):")
+
 # Displaying information for the first set of objects
-print("Publication Information:")
-pub1.display_info()
+print("\nPublication Information:")
+pub1.display_info() # Calling the display_info method of the Publication class, displays the title and author of the publication
 print("\nBook Information:")
 book1.set_number_of_pages(400)  # Updating the number of pages
-book1.display_info()
+book1.display_info() # Calling the display_info method of the Book class, displays the title, author, and the updated number of pages of the book
 print(book1.get_number_of_pages())  # Accessing the number of pages
 print("\nMagazine Information:")
-mag1.display_info()
+mag1.display_info() # Calling the display_info method of the Magazine class, displays the title, author, and issue number of the magazine
 print(mag1.get_issue_number())  # Accessing the issue number
 
-# Creating second objects
+print("\nExample objects (2):")
+
+# Creating second objects, assigning values to the attributes of the classes
 pub2 = Publication("Another Publication", "Emily Davis")
 book2 = Book("Data Science Essentials", "Michael Brown", 250)
 mag2 = Magazine("Science Weekly", "David Wilson", 15)
 
 # Displaying information for the second set of objects
 print("\nPublication Information:")
-pub2.display_info()
+pub2.display_info() # Calling the display_info method of the Publication class, displays the title and author of the publication
 print("\nBook Information:")
 book2.set_number_of_pages(-300)  # Attempting to set a negative number of pages
-book2.display_info()
+book2.display_info() # Calling the display_info method of the Book class, displays the title, author, and the updated number of pages of the book
 print(book2.get_number_of_pages())  # Accessing the number of pages
 print("\nMagazine Information:")
-mag2.display_info()
+mag2.set_issue_number(-10)  # Attempting to set a negative issue number
+mag2.display_info() # Calling the display_info method of the Magazine class, displays the title, author, and issue number of the magazine
 print(mag2.get_issue_number())  # Accessing the issue number
