@@ -16,3 +16,4 @@ My email is zcgarcilla@brc.pshs.edu.ph.
 ## Quarter 2 Activities
 - [Encapsulation](q2/sg8_encapsulation.py)
 - [Inheritance](q2/sg9_inheritance.py)
+- [Method Overriding](q2/sg10_overriding.py)
