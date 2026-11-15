@@ -17,3 +17,5 @@ My email is zcgarcilla@brc.pshs.edu.ph.
 - [Encapsulation](q2/sg8_encapsulation.py)
 - [Inheritance](q2/sg9_inheritance.py)
 - [Method Overriding](q2/sg10_overriding.py)
+- [Polymorphism Activity 1](q2/sg11_polymorphism1.py)
+- [Polymorphism Activity 2](q2/sg11_polymorphism2.py)
